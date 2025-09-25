@@ -22,6 +22,6 @@ def information(event=None):
     
     total_price = f"Total Price: PHP {price}"
     display(total_price, target="total")
-    display(message, target="details1", append=True)
-    display(message2, target="details2", append=True)
-    display(message3, target="details3", append=True)
+    display(message1,target="message1")
+    display(message2,target="message2")
+    display(message3,target="message3")

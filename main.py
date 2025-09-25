@@ -1,6 +1,6 @@
 from pyscript import document, display
 
-def information(event=None):
+def order_summary(event=None):
     info1 = str(document.getElementById("input1").value) #Name
     info2 = str(document.getElementById("input2").value) #Age
     info3 = str(document.getElementById("input3").value) #School Name
@@ -10,7 +10,7 @@ def information(event=None):
     food = str(document.getElementById("food-order").value) #Food Order
     
     if food == "Potato-Leek Soup":
-        price = 450
+        price = 193
     elif food == "Creamy and Cheesy Mashed Potatoes":
         price = 300
     elif food == "Potato-Leek Stir-Fry":
@@ -21,7 +21,7 @@ def information(event=None):
         price = 0
     
     total_price = f"Total Price: PHP {price}"
-    display(total_price, target="total")
-    display(message1,target="message1")
+    display(total_price,target="total")
+    display(message,target="message1")
     display(message2,target="message2")
     display(message3,target="message3")
